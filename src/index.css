@@ -1,0 +1,180 @@
+:root {
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --orange: #fe8a02;
+  --dark-orange: #ea7600;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Neucha';
+  src: url('../assets/fonts/Neucha-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+}
+
+.section {
+  position: relative;
+
+  max-width: 1110px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header {
+  width: 100%;
+  height: 914px;
+
+  background-color: var(--light);
+}
+
+.video-section {
+  background-color: var(--white);
+  height: 814px;
+}
+
+.menu-section {
+  background-color: var(--dark);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Neucha', sans-serif;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.orange-font-color {
+  color: var(--orange);
+}
+
+.header::before {
+  position: absolute;
+
+  width: 100%;
+  height: 914px;
+
+  background-image: url('../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: '';
+}
+
+.header-image {
+  position: absolute;
+
+  top: 55px;
+  right: -270px;
+
+  height: 525px;
+}
+
+.column-2 {
+  column-count: 2;
+  column-width: 300px;
+  column-gap: 30px;
+}
+
+.column-2 p {
+  margin-top: 0;
+}
+
+.link {
+  margin-top: 40px;
+  padding: 12px 24px;
+  background-color: var(--orange);
+
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.link:hover {
+  background-color: var(--dark-orange);
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-20 {
+  padding-top: 30px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.m-t-200 {
+  margin-top: 200px;
+}
+
+.break-inside {
+  break-inside: avoid;
+}
+
+.t-a-center {
+  text-align: center;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
