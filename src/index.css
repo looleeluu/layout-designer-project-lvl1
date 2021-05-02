@@ -46,9 +46,7 @@ body {
 }
 
 .header {
-  width: 100%;
-  height: 914px;
-
+  position: relative;
   background-color: var(--light);
 }
 
@@ -63,17 +61,19 @@ body {
 }
 
 .ikea {
+  position: relative;
   width: 100%;
-  height: 914px;
 
   background-color: var(--light);
 }
 
+
+/* backgrounds */
 .header::before {
   position: absolute;
 
   width: 100%;
-  height: 914px;
+  height: 100%;
 
   background-image: url('../assets/images/background.png');
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ body {
   position: absolute;
 
   width: 100%;
-  height: 914px;
+  height: 100%;
 
   background-image: url('../assets/images/background.png');
   background-repeat: no-repeat;
@@ -108,9 +108,10 @@ body {
   height: 525px;
 }
 
+/* Elements */
 .column-2 {
   column-count: 2;
-  column-gap: 105px;
+  column-gap: 30px;
 }
 
 .column-2 p {
@@ -139,7 +140,13 @@ body {
 
 .flex-container {
   display: flex;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
+}
+
+.space-between {
   justify-content: space-between;
 }
 
@@ -174,6 +181,18 @@ body {
 
 .link:hover {
   background-color: var(--dark-orange);
+}
+
+.light-mini-head {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px 5px 10px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: var(--white);
+
+  background-color: var(--brown);
 }
 
 /* Fonts-styles */
@@ -246,6 +265,10 @@ h3 {
   padding-top: 30px;
 }
 
+.p-t-100 {
+  padding-top: 100px;
+}
+
 .p-b-10 {
   padding-bottom: 10px;
 }
@@ -266,6 +289,10 @@ h3 {
   padding-bottom: 50px;
 }
 
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
 /* Margins */
 .m-t-20 {
   margin-top: 20px;
@@ -273,6 +300,22 @@ h3 {
 
 .m-t-200 {
   margin-top: 200px;
+}
+
+.m-r-40 {
+  margin-right: 40px;
+}
+
+.m-b-100 {
+  margin-bottom: 100px;
+}
+
+.m-l-30 {
+  margin-left: 30px;
+}
+
+.m-l-40 {
+  margin-left: 40px;
 }
 
 .break-inside {
@@ -289,9 +332,8 @@ h3 {
 }
 
 .picture {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
+  display: flex;
+  flex-grow: 1;
 
-.picture-container {
-  width: 578px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
 }
