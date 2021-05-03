@@ -52,7 +52,7 @@ body {
 
 .video-section {
   background-color: var(--white);
-  height: 814px;
+  height: 810px;
 }
 
 .menu-section {
@@ -205,6 +205,7 @@ h1 {
 
 h2 {
   font-size: 60px;
+  color: var(--orange);
 }
 
 h3 {
