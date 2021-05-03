@@ -35,7 +35,8 @@ body {
   line-height: 1.6em;
 }
 
-ol, ul {
+ol,
+ul {
   margin-left: 20px;
   padding-bottom: 20px;
 }
@@ -52,21 +53,25 @@ ol, ul {
 
 .header {
   position: relative;
+
   background-color: var(--light);
 }
 
 .video-section {
-  background-color: var(--white);
   margin-bottom: -200px;
+
+  background-color: var(--white);
 }
 
 .menu-section {
   padding-top: 100px;
+
   background-color: var(--primary-dark);
 }
 
 .img-background {
   position: relative;
+
   width: 100%;
 }
 
@@ -110,97 +115,12 @@ ol, ul {
   background-color: var(--orange);
 }
 
-/* Elements */
-.column-2 {
-  column-count: 2;
-  column-gap: 30px;
-  column-width: 300px;
-}
-
-.column-2 p {
-  margin-top: 0;
-}
-
-.link {
-  margin-top: 40px;
-  padding: 12px 24px;
-  background-color: var(--orange);
-
-  text-decoration: none;
-  color: var(--white);
-  font-weight: 700;
-}
-
-.menu-num {
-  padding-bottom: 40px;
-
-  font-size: 64px;
-  font-family: "Neucha", sans-serif;
-  line-height: 1;
-
-  color: var(--dark);
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.menu-head {
-  width: 350px;
-}
-
-.cart {
-  padding: 24px;
-  width: 302px;
-
-  background-color: var(--light);
-}
-
-.cart a {
-  display: block;
-  height: 100%;
-  text-decoration: none;
-}
-
-.cart:hover {
-  background-color: var(--orange);
-}
-
-.cart:hover p {
-  color: var(--white);
-}
-
-.cart:hover h3 {
-  color: var(--white);
-}
-
-.link:hover {
-  background-color: var(--dark-orange);
-}
-
-.mini-head {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  padding: 5px 10px 5px 10px;
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-}
-
 /* Fonts-styles */
 h1,
 h2,
 h3 {
-  font-family: 'Neucha', sans-serif;
   font-weight: normal;
+  font-family: 'Neucha', sans-serif;
   line-height: 1.2em;
 }
 
@@ -209,9 +129,10 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
-  color: var(--orange);
   padding-bottom: 30px;
+
+  color: var(--orange);
+  font-size: 60px;
 }
 
 h3 {
@@ -241,10 +162,6 @@ h3 {
 
 .f-s-52 {
   font-size: 52px;
-}
-
-.c-tr-dark {
-  color: var(--translucent-dark);
 }
 
 .f-f-neucha {
@@ -389,6 +306,93 @@ h3 {
   align-items: center;
 }
 
+/* Elements */
+.column-2 {
+  column-count: 2;
+  column-gap: 30px;
+  column-width: 300px;
+}
+
+.column-2 p {
+  margin-top: 0;
+}
+
+.link {
+  margin-top: 40px;
+  padding: 12px 24px;
+
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+
+  background-color: var(--orange);
+}
+
+.menu-num {
+  padding-bottom: 40px;
+
+  color: var(--dark);
+  font-size: 64px;
+  font-family: "Neucha", sans-serif;
+  line-height: 1;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.menu-head {
+  width: 350px;
+}
+
+.cart {
+  width: 302px;
+
+  padding: 24px;
+
+  background-color: var(--light);
+}
+
+.cart a {
+  display: block;
+  height: 100%;
+
+  text-decoration: none;
+}
+
+.cart:hover {
+  background-color: var(--orange);
+}
+
+.cart:hover p {
+  color: var(--white);
+}
+
+.cart:hover h3 {
+  color: var(--white);
+}
+
+.link:hover {
+  background-color: var(--dark-orange);
+}
+
+.mini-head {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px 5px 10px;
+
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
 /* Media */
 .header-image {
   position: absolute;
@@ -408,22 +412,23 @@ h3 {
 }
 
 input {
-  padding: 15px;
-
-  height: 20px;
   width: 393px;
+  height: 20px;
+
+  padding: 15px;
 
   border: none;
 }
 
 button {
   position: relative;
-  height: 50px;
-  width: 70px;
 
-  background-color: var(--orange);
+  width: 70px;
+  height: 50px;
 
   border: none;
+
+  background-color: var(--orange);
 }
 
 button:hover {
@@ -433,11 +438,11 @@ button:hover {
 .btn-before::before {
   position: absolute;
 
-  width: 24px;
-  height: 24px;
-
   top: 25%;
   left: 30%;
+
+  width: 24px;
+  height: 24px;
 
   background-image: url('../assets/images/send.svg');
   background-repeat: no-repeat;
