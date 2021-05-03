@@ -35,6 +35,11 @@ body {
   line-height: 1.6em;
 }
 
+ol, ul {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
 /* Blocks */
 .section {
   position: relative;
@@ -206,6 +211,7 @@ h1 {
 h2 {
   font-size: 60px;
   color: var(--orange);
+  padding-bottom: 30px;
 }
 
 h3 {
