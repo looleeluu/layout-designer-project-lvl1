@@ -57,7 +57,7 @@ ol, ul {
 
 .video-section {
   background-color: var(--white);
-  height: 811px;
+  margin-bottom: -200px;
 }
 
 .menu-section {
@@ -302,6 +302,10 @@ h3 {
 
 .p-t-100 {
   padding-top: 100px;
+}
+
+.p-b-7 {
+  padding-bottom: 7px;
 }
 
 .p-b-10 {
