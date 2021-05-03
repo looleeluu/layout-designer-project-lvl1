@@ -333,6 +333,10 @@ h3 {
 }
 
 /* Margins */
+.m-t-7 {
+  margin-top: 7px;
+}
+
 .m-t-9 {
   margin-top: 9px;
 }
